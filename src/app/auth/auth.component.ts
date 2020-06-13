@@ -49,7 +49,7 @@ export class AuthComponent implements OnInit {
       (response) => {
         console.log(response);
         this.isLoading=false;
-        this.router.navigate(['/profile']);
+        this.router.navigate(['/home']);
       }
     ,errorMessage => {
       this.error = errorMessage;

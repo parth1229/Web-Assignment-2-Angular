@@ -9,9 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { AuthComponent } from './auth/auth.component';
 import { ProfileComponent } from './profile/profile.component';
-import { ProfileDetailComponent } from './profile/profile-detail/profile-detail.component';
-import { ProfileStartComponent } from './profile/profile-start/profile-start.component';
-import {LoadingComponent} from './shared/loading-spinner/loading.component'
+import {LoadingComponent} from './shared/loading-spinner/loading.component';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -19,9 +19,9 @@ import {LoadingComponent} from './shared/loading-spinner/loading.component'
     HeaderComponent,
     AuthComponent,
     ProfileComponent,
-    ProfileDetailComponent,
-    ProfileStartComponent,
-    LoadingComponent
+    LoadingComponent,
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

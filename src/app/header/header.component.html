@@ -1,10 +1,11 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <div class="navbar-brand">
-      <!-- <img src="" class="img-responsive" alt="logo"> -->
-      <a href="#" class="navbar-brand"> JOB TRACKER </a>
+      <a href="#" class="navbar-brand"> JOB TRACKER
+        <img src="https://storage.needpix.com/rsynced_images/www-1632431_1280.png" class="img-responsive" style="max-height: 30px; max-width: 30px;" alt="logo"> </a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav">
+        <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/home" *ngIf="isAuthenticated">Home</a></li>
         <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/documents" *ngIf="isAuthenticated">My Documents</a></li>
         <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/profile" *ngIf="isAuthenticated">My Profile</a></li>
         <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/auth" *ngIf="!isAuthenticated">Authentication</a></li>
