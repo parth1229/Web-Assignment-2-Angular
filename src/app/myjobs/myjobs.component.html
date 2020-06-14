@@ -1,0 +1,27 @@
+<div class="jumbotron jumbotron-fluid" style="background: transparent !important; margin: 1%; padding: 1%;">
+    <div class="container text-center">
+        <h1 class="display-4"> <b>My Job applications </b> </h1>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="card-deck">
+      <div 
+      class="card list-group-item" 
+      style="width: 18rem; border: 1px solid black;" 
+      *ngFor="let job of jobs; let i=index"
+      >
+        <div class="card-body">
+          <h2 class="card-title">{{ job.company }}</h2>
+          <p class="card-text">{{ job.position }}</p>
+          <a href="#" class="btn btn-dark" (click)="delete(i)">Delete</a>
+        </div>
+      </div>
+    </div>
+</div>
+<div
+*ngIf="jobs.length == 0"
+>
+<h3 style="text-align: center;">No job application to show.</h3>
+</div>
+<hr>

@@ -11,7 +11,8 @@ import { AuthComponent } from './auth/auth.component';
 import { ProfileComponent } from './profile/profile.component';
 import {LoadingComponent} from './shared/loading-spinner/loading.component';
 import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+import { MyjobsComponent } from './myjobs/myjobs.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component'
     ProfileComponent,
     LoadingComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    MyjobsComponent
   ],
   imports: [
     BrowserModule,
